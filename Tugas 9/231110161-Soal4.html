@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soal 4</title>
+</head>
+<style>
+    #search {
+      background: url("bgk.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      height: 30em;
+      color: rgb(0, 0, 0);
+
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .title {
+      width: 100%;
+      text-align: center;
+    }
+    .title h1 {
+      font-size: 28px;
+    }
+    .title p {
+      font-size: 18px;
+    }
+    .title hr {
+      width: 50%;
+      margin: 20px auto;
+      opacity: 0.5;
+    }
+
+    .form-container {
+      background-color: rgba(0, 0, 0, 0.5);
+      padding: 20px;
+      border-radius: 10px;
+      margin-top: 20px;
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+    .form-group {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      text-align: left;
+    }
+    button {
+      padding: 8px 25px;
+      background-color: #ff9800;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      align-self: flex-end;
+    }
+    button:hover {
+      background-color: #e68900;
+    }
+  </style>
+</head>
+<body>
+  <div id="search">
+    <div class="title">
+      <h1>Rental Kamera</h1>
+      <p>Silahkan isi form dibawah ini untuk mengecek ketersediaan kamera</p>
+      <hr />
+      <div  class="form-container">
+      <div class="form-group">
+        <label for="end-date">Tanggal Pinjam</label>
+        <input type="date" id="end-date" />
+      </div>
+      <div class="form-group">
+        <label for="end-date">Tanggal Kembali</label>
+        <input type="date" id="end-date" />
+      </div>
+      <div class="form-group">
+        <label for="origin">Nama Kamera</label>
+        <select name="origin" id="origin">
+          <option value="KMR1">Kamera 1</option>
+          <option value="KMR2">Kamera 2</option>
+          <option value="KMR3">Kamera 3</option>
+        </select>
+      </div>
+      <button>Cek Ketersediaan</button>
+    </div>
+    </div>
+  </div>
+</body>
+</html>
